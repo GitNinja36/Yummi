@@ -1,50 +1,122 @@
-# Welcome to your Expo app 👋
+# 🥗 Yummi-FE
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Yummi-FE** is a beautifully designed React Native app that helps users **track meals, analyze nutrition**, and **promote healthy eating habits**. Built using [Expo](https://expo.dev/), Tailwind CSS (via NativeWind), and Framer Motion, it offers a smooth and intuitive experience. The app fetches recipes from [TheMealDB API](https://www.themealdb.com/api/json/v1/1) and communicates with a custom backend (`Yummi-BE`) written in Go and deployed on AWS.
 
-## Get started
+> 🛠️ This project is currently under development and will be published on **F-Droid** and the **Galaxy Store** for maximum reach and accessibility.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📱 Features
 
-2. Start the app
+* 🍛 Search and explore meals using [TheMealDB API](https://www.themealdb.com/api.php)
+* 📊 Nutrition insights and meal breakdowns
+* 💚 Calorie & macro tracking (Planned)
+* 🔐 Secure authentication via [Clerk](https://clerk.dev/)
+* 🌐 RESTful integration with a Go-powered backend hosted on AWS
+* 💅 Smooth animations and sleek UI with Framer Motion
+* 📦 Fully mobile-first and optimized for Android deployment
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🧹 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| Layer      | Technology                                           |
+| ---------- | ---------------------------------------------------- |
+| Language   | React Native (TypeScript)                            |
+| Framework  | Expo + Expo Router                                   |
+| UI         | Tailwind CSS (NativeWind) + Framer Motion            |
+| Backend    | Go (`Yummi-BE`)                                      |
+| API        | [TheMealDB](https://www.themealdb.com/api/json/1) |
+| Auth       | Clerk for secure login                               |
+| Deployment | AWS (Backend) + F-Droid/Galaxy Store (Upcoming)      |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📂 Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+mobile/
+├── app/                # Expo router pages
+├── components/         # Reusable UI components
+├── constants/          # API routes & global configs
+├── hooks/              # Custom React hooks
+├── assets/             # Fonts, images, icons
+├── scripts/            # Utility scripts (e.g., reset-project)
+├── .env                # Environment variables (ignored in Git)
+└── tailwind.config.js  # TailwindCSS config
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🛠️ Installation
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+# Clone the repo
+git clone https://github.com/GitNinja36/Yummi-FE.git
+cd Yummi-FE/mobile
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Install dependencies
+npm install
 
-## Join the community
+# Start development server
+npm run android    # For Android
+npm run ios        # For iOS (Mac only)
+npm run web        # For web preview
+```
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📸 App Icon & Store Readiness
+
+The app includes a custom logo and splash screen for store listings. Make sure your `app.json` includes:
+
+```json
+{
+  "expo": {
+    "name": "Yummi",
+    "slug": "yummi",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
+  }
+}
+```
+
+---
+
+## 🚀 Upcoming Deployment
+
+### 🌟 Target Stores:
+
+* [x] F-Droid (open-source, free Android marketplace)
+* [x] Galaxy Store
+
+### 📟 Requirements Checklist:
+
+* [ ] Signed APK or AAB
+* [ ] Unique app ID (`com.gitninja36.yummi`)
+* [ ] Screenshots (1080x1920)
+* [ ] App icon and splash screen
+* [ ] Privacy policy and permissions declaration
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+Developed with 💚 by [Rohit Kumar (GitNinja36)](https://github.com/GitNinja36)
+
+---
+
+## ⭐️ Support
+
+If you find this project useful, consider giving it a ⭐️ on GitHub!
+
