@@ -2,7 +2,7 @@
 
 **Yummi-FE** is a beautifully designed React Native app that helps users **track meals, analyze nutrition**, and **promote healthy eating habits**. Built using [Expo](https://expo.dev/), Tailwind CSS (via NativeWind), and Framer Motion, it offers a smooth and intuitive experience. The app fetches recipes from [TheMealDB API](https://www.themealdb.com/api/json/v1/1) and communicates with a custom backend (`Yummi-BE`) written in Go and deployed on AWS.
 
-> 🛠️ This project is currently under development and will be published on **F-Droid** and the **Galaxy Store** for maximum reach and accessibility.
+> Im going to published this app on **F-Droid** and the **Galaxy Store** for maximum reach and accessibility.
 
 ---
 
